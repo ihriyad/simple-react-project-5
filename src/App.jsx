@@ -1,11 +1,13 @@
 import "./App.css";
 import Navbar from "./components/daisynav/navbar";
+import MyNavbar from "./components/Navbar/MyNavbar";
 
 function App() {
   return (
     <>
       <header>
-        <Navbar></Navbar>
+        <MyNavbar></MyNavbar>
+        {/* <Navbar></Navbar> */}
         {/* <ul className="flex space-x-2">
           <li>Home</li>
           <li>Service</li>
