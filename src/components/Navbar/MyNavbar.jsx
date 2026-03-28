@@ -31,12 +31,13 @@ const MyNavbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <nav className="flex justify-between items-center p-4">
-      <div className="nav-left md:hidden" onClick={() => setOpen(!open)}>
-        {open ? <X></X> : <Menu></Menu>}
-        <ul>
-            {Links}
-        </ul>
+      <div className="md:hidden">
+        <span className="cursor-pointer" onClick={() => setOpen(!open)}>
+          {open ? <X></X> : <Menu></Menu>}
+        </span>
+        <ul className={`${open ? "block" : "hidden"} mt-3`}>{Links}</ul>
       </div>
+
       <ul className="md:flex space-x-5 p-5 hidden">{Links}</ul>
       <button className="btn btn-primary">Sign In</button>
       {/* <ul className="flex space-x-5">
