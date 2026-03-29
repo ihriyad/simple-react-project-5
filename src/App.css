@@ -9,3 +9,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.pricing-card-hover:hover{
+  color:black;
+  border: none;
+}

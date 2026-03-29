@@ -39,7 +39,7 @@ const MyNavbar = () => {
       </div>
 
       <ul className="md:flex space-x-5 p-5 hidden">{Links}</ul>
-      <button className="btn btn-primary">Sign In</button>
+      <button className="btn btn-primary text-black bg-cyan-400">Sign In</button>
     </nav>
   );
 };

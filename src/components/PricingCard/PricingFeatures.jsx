@@ -4,7 +4,7 @@ import React from "react";
 const PricingFeatures = ({ feature }) => {
   return (
     <div>
-      <p className="flex">
+      <p className="flex italic">
         <Check></Check>
         {feature}
       </p>

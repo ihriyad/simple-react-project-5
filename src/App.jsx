@@ -17,7 +17,9 @@ function App() {
       <main>
         <Suspense
           fallback={
-            <span className="loading loading-spinner text-accent"></span>
+            <div className="flex justify-center items-center h-60">
+              <span className="loading loading-spinner text-accent"></span>
+            </div>
           }
         >
           <PricingOptions pricingPromise={pricingPromise()}></PricingOptions>
