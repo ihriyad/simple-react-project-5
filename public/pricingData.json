@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Basic",
+    "price": "$5/month",
+    "description": "Perfect for casual movie watchers who want access to a limited collection.",
+    "features": [
+      "Access to 100+ movies",
+      "Standard Definition (SD) streaming",
+      "Watch on 1 device",
+      "Limited support"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard",
+    "price": "$12/month",
+    "description": "Ideal for regular viewers with full HD experience and multiple devices.",
+    "features": [
+      "Access to 500+ movies",
+      "High Definition (HD) streaming",
+      "Watch on 3 devices simultaneously",
+      "Priority customer support"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium",
+    "price": "$20/month",
+    "description": "For movie enthusiasts who want all content in ultra HD and extra perks.",
+    "features": [
+      "Access to all movies & exclusives",
+      "Ultra HD (4K) streaming",
+      "Watch on 5 devices simultaneously",
+      "Offline downloads",
+      "24/7 premium support"
+    ]
+  }
+]

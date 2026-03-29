@@ -40,18 +40,6 @@ const MyNavbar = () => {
 
       <ul className="md:flex space-x-5 p-5 hidden">{Links}</ul>
       <button className="btn btn-primary">Sign In</button>
-      {/* <ul className="flex space-x-5">
-        {navItems.map((route) => (
-          <li>
-            <a href={route.path}>{route.name}</a>
-          </li>
-        ))}
-      </ul> */}
-      {/* <ul className="flex space-x-4">
-        <li>Home</li>
-        <li>Login</li>
-        <li>Support</li>
-      </ul> */}
     </nav>
   );
 };
