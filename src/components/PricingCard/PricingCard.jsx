@@ -6,18 +6,19 @@ const PricingCard = ({ pricing }) => {
 
   return (
     <div
-      className={`border-2 border-cyan-500 
+      className={`
+        border-2
+        flex 
+        flex-col
      ${
        name == "Premium"
-         ? "hover:bg-amber-400"
+         ? "border-cyan-500"
          : name == "Standard"
-           ? "hover:bg-cyan-400 "
-           : "hover:bg-white "
+           ? "border-gray-700 "
+           : "border-gray-700 "
      }    
-     md:hover:text-black
-     md:hover:border-none
-    
-    rounded-md p-6 
+        rounded-md
+        p-6 
     `}
     >
       <div className="card-header">
@@ -25,11 +26,16 @@ const PricingCard = ({ pricing }) => {
         <h3 className="text-xl">{price}</h3>
         <h4>{description}</h4>
       </div>
-      <div className="card-features">
+      <div className="card-features flex-1">
         {features.map((feature, index) => (
-          <PricingFeatures feature={feature} key={index}></PricingFeatures>
+          <PricingFeatures
+            feature={feature}
+            key={index}
+            isPremium={pricing.name == "Premium"}
+          ></PricingFeatures>
         ))}
       </div>
+      <button className="btn btn-primary mt-2">Subscribe</button>
     </div>
   );
 };
