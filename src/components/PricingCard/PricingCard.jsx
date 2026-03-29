@@ -8,12 +8,11 @@ const PricingCard = ({ pricing }) => {
     <div
       className={`border-2 border-cyan-500 
      ${name == "Premium" ?
-         "hover:bg-amber-400" : 
+         "hover:bg-amber-400 card-hover" : 
          name == "Standard" ? 
-         "hover:bg-cyan-400" : 
-         "hover:bg-white"}     
+         "hover:bg-cyan-400 card-hover" : 
+         "hover:bg-white card-hover"}     
     rounded-md p-6 
-    pricing-card-hover
     `}
     >
       <div className="card-header">

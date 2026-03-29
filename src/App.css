@@ -10,7 +10,7 @@ body {
   font-style: normal;
 }
 
-.pricing-card-hover:hover{
+.card-hover:hover{
   color:black;
   border: none;
 }
