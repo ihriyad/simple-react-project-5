@@ -9,8 +9,3 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
-.card-hover:hover{
-  color:black;
-  border: none;
-}

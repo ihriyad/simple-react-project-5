@@ -7,11 +7,16 @@ const PricingCard = ({ pricing }) => {
   return (
     <div
       className={`border-2 border-cyan-500 
-     ${name == "Premium" ?
-         "hover:bg-amber-400 card-hover" : 
-         name == "Standard" ? 
-         "hover:bg-cyan-400 card-hover" : 
-         "hover:bg-white card-hover"}     
+     ${
+       name == "Premium"
+         ? "hover:bg-amber-400"
+         : name == "Standard"
+           ? "hover:bg-cyan-400 "
+           : "hover:bg-white "
+     }    
+     md:hover:text-black
+     md:hover:border-none
+    
     rounded-md p-6 
     `}
     >
